@@ -1,0 +1,6 @@
+{
+  "name": "C Compiler",
+  "description": "A 100% offline, privacy-first C programming IDE, compiler, and runtime environment with real local execution, diagnostics parsing, and project management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
