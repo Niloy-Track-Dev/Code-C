@@ -401,6 +401,10 @@ class EditorViewModel(application: Application) : AndroidViewModel(application) 
         insertTextAtCursor(snippet.code)
     }
 
+    fun insertSymbol(symbol: String) {
+        insertTextAtCursor(symbol)
+    }
+
     fun jumpToLine(lineNumber: Int) {
         val lines = _uiState.value.textFieldValue.text.lines()
         var charOffset = 0
