@@ -1,81 +1,100 @@
-# <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="48" height="48"> C Code
+# <p align="center"><img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="64" height="64"><br>C Code</p>
 
 <p align="center">
-  <img src="assets/banner.jpg" width="100%" alt="C Code Banner">
+  <img src="assets/banner.jpg" width="100%" alt="C Code Hero Banner">
 </p>
 
 <p align="center">
-  <a href="https://android-arsenal.com/details/1/8888"><img src="https://img.shields.io/badge/Platform-Android-brightgreen.svg?style=flat-square" alt="Platform"></a>
-  <a href="https://github.com/Niloy-Track-Dev/C-Code/releases"><img src="https://img.shields.io/github/v/release/Niloy-Track-Dev/C-Code?style=flat-square" alt="Release"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square" alt="License"></a>
-  <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-2.0-purple.svg?style=flat-square" alt="Kotlin"></a>
-  <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack-Compose-4285F4.svg?style=flat-square" alt="Compose"></a>
+  <a href="https://github.com/Niloy-Track-Dev/C-Code/releases/latest"><img src="https://img.shields.io/github/v/release/Niloy-Track-Dev/C-Code?style=for-the-badge&color=blue" alt="Latest Release"></a>
+  <a href="https://github.com/Niloy-Track-Dev/C-Code/releases"><img src="https://img.shields.io/github/downloads/Niloy-Track-Dev/C-Code/total?style=for-the-badge&color=success" alt="Downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%20v3-red?style=for-the-badge" alt="License"></a>
+  <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
 </p>
 
 <p align="center">
-  <b>A professional, 100% offline C IDE and high-performance compiler for Android.</b><br>
-  Built with Material You, featuring a sandboxed execution engine and comprehensive C grammar support.
+  <b>A High-Performance, 100% Offline C IDE & Compiler for Android</b><br>
+  Built with Jetpack Compose & Material You.
 </p>
 
 ---
 
-## ✨ Features
+## 📖 Introduction
 
-- 🚀 **100% Offline Engine**: Compile and run C code entirely on-device. No internet, no latency, no data collection.
-- 🎨 **Material You Design**: Beautiful, responsive interface that adapts to your system colors (Dynamic Color support).
-- 🛠️ **Advanced Editor**: 
-  - Real-time syntax highlighting for C keywords, types, and macros.
-  - Auto-close brackets, quotes, and smart indentation.
-  - Multi-tab terminal with Stdin support and performance metrics.
-- 🔍 **Powerful Diagnostics**: Abstract Syntax Tree (AST) based error detection with line-specific jump-to-problem logic.
-- 📂 **Project Management**: Organize your code with a robust project system. Rename, duplicate, and export projects as `.c` files.
-- 🧩 **Smart Snippets**: Built-in library of common C templates (loops, structs, sorting algorithms) for faster coding.
-- 📦 **Sandboxed Execution**: Memory-safe execution with timeout guards and infinite loop protection.
+**C Code** is a professional-grade integrated development environment (IDE) designed for mobile C development. Unlike other apps that rely on cloud servers, C Code features a **fully self-contained compiler engine** that runs natively on your Android device. Whether you're a student learning the ropes or a developer testing algorithms on the go, C Code provides a desktop-class experience in your pocket.
 
-## 📸 Screenshots
+## 🚀 Key Features
+
+### 💻 Professional Editor
+- **Modern Syntax Highlighting**: Precisely colors C keywords, types, literals, and preprocessor directives.
+- **Smart Editing**: Auto-indentation, bracket matching, and auto-closing quotes/braces.
+- **Quick Symbols**: A specialized toolbar for common C symbols (`;`, `{`, `->`, etc.) to speed up mobile typing.
+- **Undo/Redo & Formatting**: Full state management and built-in code beautifier.
+
+### ⚙️ Compiler & Execution
+- **Offline First**: Zero internet connection required. Your code is compiled and executed locally.
+- **Interactive Terminal**: Full `stdin` support allows you to interact with your programs in real-time.
+- **Performance Profiling**: View precise execution time and memory usage for every run.
+- **Safe Sandbox**: Includes execution timeouts and infinite loop protection to keep your device stable.
+
+### 🎨 Design & UX
+- **Material You**: Dynamic color support that adapts to your wallpaper and system theme.
+- **Adaptive Layout**: Optimized for both phones and tablets with fluid, responsive components.
+- **Rich Templates**: Start instantly with boilerplate for Hello World, Linked Lists, Sorting, and more.
+
+## 📸 Preview
 
 <p align="center">
-  <img src="assets/mockup.jpg" width="80%" alt="App Mockup">
+  <img src="assets/mockup.jpg" width="85%" alt="C Code App Mockup">
 </p>
 
-## 🏗️ Architecture
+---
 
-**C Code** is built using modern Android development standards:
+## 🛠️ Technical Specifications
 
-- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose) for a declarative, fluid UI.
-- **Concurrency**: [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & Flow for non-blocking compilation.
-- **Local Persistence**: [Room Database](https://developer.android.com/training/data-storage/room) for secure, on-device project storage.
-- **Compiler Core**: A custom-built recursive descent parser and memory-safe virtual execution engine.
-- **Theming**: Full Material 3 implementation with dynamic color support (Android 12+).
+- **C Standard**: Supports C89/C90, C99, and C11 standards.
+- **Standard Library**: Implementation of `stdio.h`, `stdlib.h`, `string.h`, `math.h`, and more.
+- **Parser**: Custom Recursive Descent Parser generating a comprehensive Abstract Syntax Tree (AST).
+- **Diagnostics**: Real-time error reporting with line numbers and source code snippets.
 
-## 🛠️ Building
+## 🏗️ Project Structure
 
-To build the project from source, you'll need the latest version of Android Studio (Hedgehog or newer).
+```text
+C-Code/
+├── app/                # Main Android application module
+│   ├── src/main/java/  # Kotlin Source Code (MVVM)
+│   └── src/main/res/   # UI Resources & Theme definitions
+├── assets/             # Documentation assets & banners
+├── gradle/             # Version catalogs & build configurations
+└── README.md           # This file
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Niloy-Track-Dev/C-Code.git
-   ```
-2. Open the project in Android Studio.
-3. Sync Project with Gradle Files.
-4. Run the `app` module on your device or emulator.
+## 🛤️ Roadmap
+
+- [ ] **GDB Integration**: Step-by-step debugging support.
+- [ ] **Multi-file Projects**: Support for headers and multiple `.c` files.
+- [ ] **External Library Support**: Link against pre-compiled static libraries.
+- [ ] **Cloud Sync (Optional)**: Secure backup of projects to personal Drive/GitHub.
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you'd like to improve the compiler engine or add new editor features:
+We love contributions! Whether it's fixing a bug in the lexer or improving the Material 3 UI:
 
-1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the Branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+1. **Fork** the repository.
+2. **Clone** your fork.
+3. **Branch** off `main`.
+4. **Commit** with descriptive messages.
+5. **Push** and open a **Pull Request**.
 
 ## 📜 License
 
-Distributed under the **GPL v3.0 License**. See `LICENSE` for more information.
+This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for the full text.
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/Niloy-Track-Dev">Niloy Mitra</a>
+  Developed by <b>Niloy Mitra</b><br>
+  <i>Empowering mobile development, one line at a time.</i>
 </p>
+
