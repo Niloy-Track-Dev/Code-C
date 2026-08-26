@@ -1,6 +1,6 @@
 {
-  "name": "C Compiler",
-  "description": "A 100% offline, privacy-first C programming IDE, compiler, and runtime environment with real local execution, diagnostics parsing, and project management.",
+  "name": "C Code",
+  "description": "Professional Material You offline C IDE and compiler for Android with high-performance local execution engine, AST diagnostics, and project management.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

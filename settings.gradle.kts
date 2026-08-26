@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "C Compiler"
+rootProject.name = "C Code"
 
 include(":app")
